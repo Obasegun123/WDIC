@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What Do I Cook (WDIC)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <h1>What Do I Cook?</h1>
+    <div id="auth-section">
+      <button id="google-sign-in">Sign In with Google</button>
+    </div>
+    <div id="meal-section" class="hidden">
+      <h2>Create a New Meal</h2>
+      <form id="meal-form">
+        <input type="text" id="meal-name" placeholder="Meal Name" required>
+        <input type="text" id="side-name" placeholder="Side Dish" required>
+        <select id="difficulty">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+        <textarea id="ingredients" placeholder="Ingredients (comma-separated)" required></textarea>
+        <button type="submit">Save Meal</button>
+      </form>
+      <h2>My Meals</h2>
+      <div id="meal-list"></div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
